@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema Solar</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+</head>
+<body class="bg-dark text-white">
+  <div class="container text-center">
+    <h1 class="mb-4">Sistema Solar</h1>
+    <div class="solar-system">
+      <svg width="100%" height="auto" viewBox="0 0 500 500">
+        <!-- Sol -->
+        <circle cx="250" cy="250" r="25" fill="orange" id="sun" class="tooltip-planet" data-bs-toggle="tooltip" data-bs-placement="top" title="El Sol: La estrella del sistema solar."></circle>
+
+        <!-- Órbitas -->
+        <circle id="orbit-1" cx="250" cy="250" r="35" fill="none" stroke="gray" class="orbit" />
+        <circle id="orbit-2" cx="250" cy="250" r="55" fill="none" stroke="gray" class="orbit" />
+        <circle id="orbit-3" cx="250" cy="250" r="75" fill="none" stroke="gray" class="orbit" />
+        <circle id="orbit-4" cx="250" cy="250" r="100" fill="none" stroke="gray" class="orbit" />
+        <circle id="orbit-5" cx="250" cy="250" r="180" fill="none" stroke="gray" class="orbit" />
+        <circle id="orbit-6" cx="250" cy="250" r="200" fill="none" stroke="gray" class="orbit" />
+        <circle id="orbit-7" cx="250" cy="250" r="220" fill="none" stroke="gray" class="orbit" />
+
+        <!-- Planetas -->
+        <circle cx="250" cy="250" r="7" fill="brown" id="mercurio" class="planet tooltip-planet" data-bs-toggle="tooltip" data-bs-placement="top" title="Mercurio" />
+        <circle cx="250" cy="250" r="10" fill="red" id="venus" class="planet tooltip-planet" data-bs-toggle="tooltip" data-bs-placement="top" title="Venus" />
+        <circle cx="250" cy="250" r="12" fill="blue" id="earth" class="planet tooltip-planet" data-bs-toggle="tooltip" data-bs-placement="top" title="La Tierra: Nuestro planeta." />
+        <circle cx="250" cy="250" r="8" fill="red" id="mars" class="planet tooltip-planet" data-bs-toggle="tooltip" data-bs-placement="top" title="Marte" />
+        <circle cx="250" cy="250" r="15" fill="purple" id="jupiter" class="planet tooltip-planet" data-bs-toggle="tooltip" data-bs-placement="top" title="Júpiter" />
+        <circle cx="250" cy="250" r="12" fill="yellow" id="saturno" class="planet tooltip-planet" data-bs-toggle="tooltip" data-bs-placement="top" title="Saturno" />
+        <circle cx="250" cy="250" r="12" fill="cyan" id="urano" class="planet tooltip-planet" data-bs-toggle="tooltip" data-bs-placement="top" title="Urano" />
+        <circle cx="250" cy="250" r="12" fill="blue" id="neptuno" class="planet tooltip-planet" data-bs-toggle="tooltip" data-bs-placement="top" title="Neptuno" />
+
+        <!-- Satelites -->
+
+        <circle cx="250" cy="235" r="3" fill="gray" id="moon" class="planet tooltip-planet" data-bs-toggle="tooltip" data-bs-placement="top" title="Luna" />
+
+        <!--Cinturón de asteroides -->
+        <circle cx="250" cy="250" r="130" id="cinturon-asteroides" fill="none" class="cinturon" data-bs-toggle="tooltip" data-bs-placement="top" title="El cinturón de asteroides." />
+
+        <!--Cinturón de kuiper -->
+        <circle cx="250" cy="250" r="240" id="cinturon-kuiper" fill="none" class="cinturon" data-bs-toggle="tooltip" data-bs-placement="top" title="El cinturón de kuiper." />
+
+        <!-- Ceres (Cinturón de asteroides) -->
+        <circle cx="250" cy="250" r="3" fill="gray" id="ceres" class="planet tooltip-planet" data-bs-toggle="tooltip" data-bs-placement="top" title="Ceres: El mayor asteroide del cinturón de asteroides." />
+
+        <!-- Estrellas y cometas -->
+        <circle cx="50" cy="50" r="1" fill="white" id="estrella-1" class="star" />
+        <circle cx="450" cy="80" r="1" fill="white" id="estrella-2" class="star" />
+        <circle cx="150" cy="400" r="1" fill="white" id="estrella-3" class="star" />
+        <circle cx="100" cy="50" r="2" fill="yellow" id="cometa-1" class="comet" data-bs-toggle="tooltip" data-bs-placement="top" title="Cometa 1" />
+      </svg>
+    </div>
+    <div id="info-box" class="info-box mt-4">Haz clic en un planeta para ver información detallada.</div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
